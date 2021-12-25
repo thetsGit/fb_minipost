@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=2" />
+    <title>Document</title>
+    <meta http-equiv="refresh" content="10" />
+  </head>
+  <body>
+    <script>
+      setTimeout(progress, 1000);
+      function progress() {
+        document.querySelector("progress").value = Math.floor(
+          Math.random() * 10
+        );
+        setTimeout(progress, 1000);
+      }
+    </script>
+    <progress min="0" max="10" value="6"></progress>
+    <br />
+    <details>
+      <summary>Details Title</summary>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, veritatis.
+    </details>
+    <input type="text" list="datalist" />
+    <datalist id="datalist">
+      <option value="thet"></option>
+      <option value="han"></option>
+      <option value="is"></option>
+      <option value="awesome"></option>
+    </datalist>
+    <br />
+    <label>Options</label>
+    <select name="Options" id="">
+      <optgroup label="Automobiles">
+        <option value="">BMW</option>
+        <option value="">Tesla</option>
+      </optgroup>
+      <optgroup label="mobile phones">
+        <option value="">Apple</option>
+        <option value="">Samsung</option>
+      </optgroup>
+      <optgroup label="Fashion house">
+        <option value="">GUCCI</option>
+        <option value="">LV</option>
+      </optgroup>
+    </select>
+  </body>
+</html>
